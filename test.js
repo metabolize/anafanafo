@@ -1,6 +1,7 @@
 'use strict'
 
 const path = require('path')
+const fs = require('fs')
 const { toBeWithin } = require('@coderbyheart/jest-expect-tobewithin')
 const { PDFKitTextMeasurer } = require('gh-badges/lib/text-measurer')
 const { createConsumer } = require('.')
@@ -9,14 +10,22 @@ expect.extend({ toBeWithin })
 
 const consumer = createConsumer(verdanaWidths)
 
-describe('Basic test', () => {
+it('Basic test', () => {
   expect(consumer.widthOf('m')).toBe(106.99)
 })
 
 const fontPath = path.join(__dirname, 'Verdana.ttf')
-const measurer = new PDFKitTextMeasurer(fontPath)
+const haveFont = fs.existsSync(fontPath)
+const maybeDescribe = haveFont ? describe : describe.skip
 
-describe('Parity with PDFKitTextMeasurer', () => {
+maybeDescribe('Parity with PDFKitTextMeasurer', () => {
+  let measurer
+  beforeAll(() => {
+    if (haveFont) {
+      measurer = new PDFKitTextMeasurer(fontPath)
+    }
+  })
+
   describe('ASCII strings, with a fairly small tolerance', () => {
     const EPSILON_PIXELS = 0.75
 

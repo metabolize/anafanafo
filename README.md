@@ -16,7 +16,7 @@ Built with [Shields][] in mind.
 
 (And because Verdana always makes me think of [this][the name game].)
 
-[char-width-table-builder]: https://github.com/metabolize/char-width-table-builder/
+[char-width-table-consumer]: https://github.com/metabolize/char-width-table-consumer/
 [shields]: https://github.com/badges/shields/
 [the name game]: https://www.youtube.com/watch?v=5MJLi5_dyn0
 

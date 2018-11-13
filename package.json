@@ -9,7 +9,7 @@
     "prettier-check": "prettier-check \"**/*.js\"",
     "test": "run-p jest lint prettier-check"
   },
-  "author": "",
+  "author": "Metabolize",
   "license": "MIT",
   "dependencies": {
     "binary-search": "^1.3.4"

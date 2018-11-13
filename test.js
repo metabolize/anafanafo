@@ -1,3 +1,5 @@
+'use strict'
+
 const path = require('path')
 const { toBeWithin } = require('@coderbyheart/jest-expect-tobewithin')
 const { PDFKitTextMeasurer } = require('gh-badges/lib/text-measurer')

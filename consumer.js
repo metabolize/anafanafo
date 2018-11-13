@@ -1,3 +1,5 @@
+'use strict'
+
 const bs = require('binary-search')
 const { promisify } = require('util')
 const readFile = promisify(require('fs').readFile)

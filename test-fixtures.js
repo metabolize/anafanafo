@@ -1,3 +1,5 @@
+'use strict'
+
 // Note: All rights to Verdana are owned by its copyright holders.
 
 module.exports = {

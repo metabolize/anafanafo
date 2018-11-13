@@ -1,8 +1,9 @@
 'use strict'
 
+const fs = require('fs')
 const bs = require('binary-search')
 const { promisify } = require('util')
-const readFile = promisify(require('fs').readFile)
+const readFile = promisify(fs.readFile)
 
 module.exports = class CharWidthTableConsumer {
   constructor(data) {
@@ -16,6 +17,12 @@ module.exports = class CharWidthTableConsumer {
 
   static async load(path) {
     const json = await readFile(path)
+    const data = JSON.parse(json)
+    return new CharWidthTableConsumer(data)
+  }
+
+  static loadSync(path) {
+    const json = fs.readFileSync(path)
     const data = JSON.parse(json)
     return new CharWidthTableConsumer(data)
   }

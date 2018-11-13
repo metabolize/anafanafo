@@ -58,9 +58,9 @@ async function computeKerning(ranges, { verbose = true } = {}) {
 
 async function main() {
   const widths = await computeWidthsOfRanges(selectedRanges)
-  const widths = await computeWidthsOfRanges(shortListOfRanges)
+  // const widths = await computeWidthsOfRanges(shortListOfRanges)
 
-  fs.writeFileSync('widths.json', JSON.stringify(collected))
+  fs.writeFileSync('widths.json', JSON.stringify(widths))
 
   const kerning = await computeKerning(shortListOfRanges)
 

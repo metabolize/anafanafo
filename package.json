@@ -1,6 +1,7 @@
 {
   "name": "char-width-table-consumer",
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "repository": "metabolize/char-width-table-consumer",
   "description": "Measure text using a character width table",
   "scripts": {
     "jest": "jest",

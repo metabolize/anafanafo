@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "repository": "metabolize/anafanafo",
   "description": "Serialize character widths using Puppeteer",
-  "main": "index.js",
+  "main": "src",
   "author": "Metabolize",
   "license": "MIT",
   "dependencies": {

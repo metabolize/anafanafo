@@ -4,11 +4,7 @@
   "repository": "metabolize/anafanafo",
   "description": "Compute text width in 110 pt Verdana",
   "scripts": {
-    "jest": "jest",
-    "lint": "eslint '**/*.js'",
-    "prettier": "prettier --write \"**/*.js\"",
-    "prettier-check": "prettier-check \"**/*.js\"",
-    "test": "run-p jest lint prettier-check"
+    "test": "jest"
   },
   "author": "Metabolize",
   "license": "MIT",

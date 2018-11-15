@@ -3,10 +3,12 @@
   "repository": "metabolize/anafanafo",
   "private": true,
   "scripts": {
+    "postinstall": "lerna bootstrap",
     "lint": "eslint '**/*.js'",
     "prettier": "prettier --write \"**/*.js\"",
     "prettier-check": "prettier-check \"**/*.js\"",
-    "test": "run-p lint prettier-check"
+    "jest": "jest",
+    "test": "run-p lint prettier-check jest"
   },
   "devDependencies": {
     "@coderbyheart/jest-expect-tobewithin": "^1.0.2",

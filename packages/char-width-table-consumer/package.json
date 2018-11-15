@@ -1,14 +1,10 @@
 {
   "name": "char-width-table-consumer",
   "version": "0.2.0",
-  "repository": "metabolize/char-width-table-consumer",
+  "repository": "metabolize/anafanafo",
   "description": "Measure text using a character width table",
   "scripts": {
-    "jest": "jest",
-    "lint": "eslint '**/*.js'",
-    "prettier": "prettier --write \"**/*.js\"",
-    "prettier-check": "prettier-check \"**/*.js\"",
-    "test": "run-p jest lint prettier-check"
+    "test": "jest"
   },
   "author": "Metabolize",
   "license": "MIT",

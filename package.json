@@ -1,6 +1,13 @@
 {
   "name": "root",
+  "repository": "metabolize/anafanafo",
   "private": true,
+  "scripts": {
+    "lint": "eslint '**/*.js'",
+    "prettier": "prettier --write \"**/*.js\"",
+    "prettier-check": "prettier-check \"**/*.js\"",
+    "test": "run-p lint prettier-check"
+  },
   "devDependencies": {
     "@coderbyheart/jest-expect-tobewithin": "^1.0.2",
     "eslint": "^5.9.0",

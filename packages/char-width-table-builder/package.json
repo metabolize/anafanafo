@@ -1,15 +1,10 @@
 {
   "name": "char-width-table-builder",
   "version": "0.1.0",
+  "repository": "metabolize/anafanafo",
   "description": "Serialize character widths using Puppeteer",
   "main": "index.js",
-  "scripts": {
-    "lint": "eslint '**/*.js'",
-    "prettier": "prettier --write \"**/*.js\"",
-    "prettier-check": "prettier-check \"**/*.js\"",
-    "test": "run-p lint prettier-check"
-  },
-  "author": "",
+  "author": "Metabolize",
   "license": "MIT",
   "dependencies": {
     "puppeteer": "^1.10.0"

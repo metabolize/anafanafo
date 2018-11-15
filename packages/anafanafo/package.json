@@ -1,7 +1,7 @@
 {
   "name": "anafanafo",
-  "repository": "metabolize/anafanafo",
   "version": "0.1.0",
+  "repository": "metabolize/anafanafo",
   "description": "Compute text width in 110 pt Verdana",
   "scripts": {
     "jest": "jest",

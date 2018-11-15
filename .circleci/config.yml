@@ -15,9 +15,7 @@ jobs:
 
       - run:
           name: Install dependencies
-          command: |
-            npm install
-            npm run bootstrap
+          command: npm install
 
       - save_cache:
           paths:

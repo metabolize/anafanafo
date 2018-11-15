@@ -10,5 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "char-width-table-consumer": "^0.2.1"
-  }
+  },
+  "gitHead": "4bd230d372ffe93cd9bf7f036b83be6ef5dab75e"
 }

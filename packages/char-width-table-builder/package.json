@@ -8,5 +8,6 @@
   "license": "MIT",
   "dependencies": {
     "puppeteer": "^1.10.0"
-  }
+  },
+  "gitHead": "4bd230d372ffe93cd9bf7f036b83be6ef5dab75e"
 }

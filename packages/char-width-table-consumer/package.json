@@ -1,6 +1,6 @@
 {
   "name": "char-width-table-consumer",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "repository": "metabolize/anafanafo",
   "description": "Measure text using a character width table",
   "main": "src",

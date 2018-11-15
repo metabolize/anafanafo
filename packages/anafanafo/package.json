@@ -1,6 +1,6 @@
 {
   "name": "anafanafo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": "metabolize/anafanafo",
   "description": "Compute text width in 110 pt Verdana",
   "scripts": {
@@ -9,6 +9,6 @@
   "author": "Metabolize",
   "license": "MIT",
   "dependencies": {
-    "char-width-table-consumer": "^0.2.0"
+    "char-width-table-consumer": "^0.2.1"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "char-width-table-builder",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": "metabolize/anafanafo",
   "description": "Serialize character widths using Puppeteer",
   "main": "src",

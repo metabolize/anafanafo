@@ -8,7 +8,8 @@
     "prettier": "prettier --write \"**/*.js\"",
     "prettier-check": "prettier-check \"**/*.js\"",
     "jest": "jest",
-    "test": "run-p lint prettier-check jest"
+    "test": "run-p lint prettier-check jest",
+    "publish": "lerna publish"
   },
   "devDependencies": {
     "@coderbyheart/jest-expect-tobewithin": "^1.0.2",

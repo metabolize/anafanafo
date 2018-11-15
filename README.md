@@ -11,14 +11,22 @@
 [prettier]: https://prettier.io/
 [lerna]: https://lernajs.io/
 
-Efficiently compute text width in 110 pt Verdana using [char-width-table-consumer][]
-and a lookup table.
+This repo contains three related npm packages:
 
-Built with [Shields][] in mind.
+- [char-width-table-builder][], which builds character-width tables using
+  [Puppeteer][].
+- [char-width-table-consumer][], which efficiently computes text width using a
+  character-width table.
+- [anafanafo][], which computes text width for 110 pt Verdana.
+
+These have been built with [Shields][] in mind.
 
 (And because Verdana always makes me think of [this][the name game].)
 
-[char-width-table-consumer]: ../char-width-table-consumer
+[char-width-table-builder]: packages/char-width-table-builder
+[char-width-table-consumer]: packages/char-width-table-consumer
+[anafanafo]: packages/anafanafo
+[puppeteer]: https://pptr.dev/
 [shields]: https://github.com/badges/shields/
 [the name game]: https://www.youtube.com/watch?v=5MJLi5_dyn0
 

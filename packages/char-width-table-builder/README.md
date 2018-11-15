@@ -2,12 +2,14 @@
 
 [![version](https://img.shields.io/npm/v/char-width-table-builder.svg?style=flat-square)][npm]
 [![license](https://img.shields.io/npm/l/char-width-table-builder.svg?style=flat-square)][npm]
-[![build](https://img.shields.io/circleci/project/github/metabolize/char-width-table-builder/master.svg?style=flat-square)][build]
+[![build](https://img.shields.io/circleci/project/github/metabolize/anafanafo/master.svg?style=flat-square)][build]
 [![code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)][prettier]
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style=flat-square)][lerna]
 
 [npm]: https://npmjs.com/char-width-table-builder
-[build]: https://circleci.com/gh/metabolize/char-width-table-builder/tree/master
+[build]: https://circleci.com/gh/metabolize/anafanafo/tree/master
 [prettier]: https://prettier.io/
+[lerna]: https://lernajs.io/
 
 Build character-width tables using [Puppeteer][].
 

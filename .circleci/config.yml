@@ -13,9 +13,11 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: |
-        npm ci
-        npm run bootstrap
+      - run:
+          name: Install dependencies
+          command: |
+            npm ci
+            npm run bootstrap
 
       - save_cache:
           paths:

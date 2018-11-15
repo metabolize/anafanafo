@@ -3,6 +3,7 @@
   "version": "0.2.0",
   "repository": "metabolize/anafanafo",
   "description": "Measure text using a character width table",
+  "main": "src",
   "scripts": {
     "test": "jest"
   },

@@ -9,6 +9,7 @@
 
 [npm]: https://npmjs.com/anafanafo
 [build]: https://circleci.com/gh/metabolize/anafanafo/tree/master
+[bundlephobia]: https://bundlephobia.com/result?p=anafanafo
 [prettier]: https://prettier.io/
 [lerna]: https://lernajs.io/
 

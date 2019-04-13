@@ -24,7 +24,7 @@ This performs a simple lookup, without considering kerning.
 
 Built with [Shields][] in mind.
 
-[char-width-table-builder]: ../char-width-table-builder
+[char-width-table-builder]: https://www.npmjs.com/package/char-width-table-builder
 [shields]: https://github.com/badges/shields/
 
 ## License

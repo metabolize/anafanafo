@@ -20,7 +20,7 @@ Built with [Shields][] in mind.
 
 (And because Verdana always makes me think of [this][the name game].)
 
-[char-width-table-consumer]: ../char-width-table-consumer
+[char-width-table-consumer]: https://www.npmjs.com/package/char-width-table-consumer
 [shields]: https://github.com/badges/shields/
 [the name game]: https://www.youtube.com/watch?v=5MJLi5_dyn0
 

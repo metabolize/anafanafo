@@ -5,8 +5,8 @@
   "scripts": {
     "postinstall": "lerna bootstrap",
     "lint": "eslint '**/*.js'",
-    "prettier": "prettier --write \"**/*.js\"",
-    "prettier:check": "prettier --check \"**/*.js\"",
+    "prettier": "prettier --write \"**/*.@(yml|json|js|md)\"",
+    "prettier:check": "prettier --check \"**/*.@(yml|json|js|md)\"",
     "jest": "jest",
     "test": "run-p lint prettier:check jest",
     "publish": "lerna publish"

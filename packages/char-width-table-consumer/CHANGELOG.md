@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.0 – Apr 12, 2019
+
+- Update dependencies.
+- Same API as previous release.
+
 ## 0.2.1 – Nov 15, 2018
 
 No external changes.

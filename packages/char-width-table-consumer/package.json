@@ -5,7 +5,7 @@
   "description": "Measure text using a character width table",
   "main": "src",
   "scripts": {
-    "test": "jest"
+    "test": "mocha test.js"
   },
   "author": "Metabolize",
   "license": "MIT",

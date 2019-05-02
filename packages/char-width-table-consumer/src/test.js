@@ -2,11 +2,10 @@
 
 const path = require('path')
 const fs = require('fs')
-const { toBeWithin } = require('@coderbyheart/jest-expect-tobewithin')
+const { expect } = require('chai')
 const { PDFKitTextMeasurer } = require('gh-badges/lib/text-measurer')
 const { createConsumer } = require('.')
 const { verdanaWidths } = require('./test-fixtures')
-expect.extend({ toBeWithin })
 
 const consumer = createConsumer(verdanaWidths)
 
@@ -20,7 +19,7 @@ const maybeDescribe = haveFont ? describe : describe.skip
 
 maybeDescribe('Parity with PDFKitTextMeasurer', () => {
   let measurer
-  beforeAll(() => {
+  before(() => {
     if (haveFont) {
       measurer = new PDFKitTextMeasurer(fontPath)
     }

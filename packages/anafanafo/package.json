@@ -4,7 +4,7 @@
   "repository": "metabolize/anafanafo",
   "description": "Compute text width in 110 pt Verdana",
   "scripts": {
-    "test": "jest"
+    "test": "mocha test.js"
   },
   "author": "Metabolize",
   "license": "MIT",

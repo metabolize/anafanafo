@@ -4,7 +4,7 @@ extends:
 
 env:
   node: true
-  jest: true
+  mocha: true
 
 parserOptions:
   # Override eslint-config-standard, which incorrectly sets this to "module",

@@ -7,7 +7,7 @@
   "author": "Metabolize",
   "license": "MIT",
   "dependencies": {
-    "puppeteer": "^1.14.0"
+    "puppeteer": "^5.2.1"
   },
   "gitHead": "4bd230d372ffe93cd9bf7f036b83be6ef5dab75e"
 }

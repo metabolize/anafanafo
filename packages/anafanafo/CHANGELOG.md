@@ -6,7 +6,6 @@
 
 - Support 10px and 10px Verdana, in normal and bold.
 
-
 ## 1.0.0 – Apr 12, 2018
 
 - Update dependencies.

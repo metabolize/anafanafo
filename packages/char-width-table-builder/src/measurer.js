@@ -21,7 +21,7 @@ module.exports = class Measurer {
         ${stylesheets}
       </head>
       <body>
-        <p style="font: ${font};">This ensures the font is loaded.</p>
+        <span style="font: ${font}">This ensures the font is loaded.</span>
       </html>
     `
   }

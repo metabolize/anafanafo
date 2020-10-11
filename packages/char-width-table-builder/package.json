@@ -6,6 +6,9 @@
   "main": "src",
   "author": "Metabolize",
   "license": "MIT",
+  "scripts": {
+    "test": "mocha \"src/**/*.spec.js\""
+  },
   "dependencies": {
     "puppeteer": "^1.14.0"
   },

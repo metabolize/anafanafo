@@ -2,23 +2,47 @@
 
 const puppeteer = require('puppeteer')
 
+// `stylesheets`: Style sheets to be loaded in the browser, e.g.
+// `<link href="https://fonts.googleapis.com/css2?family=Roboto&display=block" rel="stylesheet">`
+// This is useful for measuring web fonts and also for testing.
 module.exports = class Measurer {
-  constructor({ font = '110px Verdana' } = {}) {
+  constructor({ font = '110px Verdana', stylesheets } = {}) {
     this.font = font
+    this.stylesheets = stylesheets
     this.browser = undefined
     this.page = undefined
+  }
+
+  static renderDocument({ font, stylesheets }) {
+    return `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        ${stylesheets}
+      </head>
+      <body>
+        <p style="font: ${font};">This ensures the font is loaded.</p>
+      </html>
+    `
   }
 
   async init() {
     this.browser = await puppeteer.launch()
     this.page = await this.browser.newPage()
+    if (this.stylesheets) {
+      const { stylesheets, font } = this
+      const document = Measurer.renderDocument({ stylesheets, font })
+      await this.page.goto(`data:text/html,${document}`, {
+        waitUntil: 'networkidle2',
+      })
+    }
     await this.page.evaluate(() => {
       window.canvas = document.createElement('canvas')
     })
   }
 
   async destroy() {
-    return this.browser.close()
+    await this.browser.close()
   }
 
   async widthOf(text) {

@@ -1,6 +1,6 @@
 {
   "name": "anafanafo",
-  "version": "2.0.0-beta.0",
+  "version": "2.0.0-beta.1",
   "repository": "metabolize/anafanafo",
   "description": "Compute text width in Verdana",
   "scripts": {

@@ -2,7 +2,7 @@
   "name": "anafanafo",
   "version": "1.0.0",
   "repository": "metabolize/anafanafo",
-  "description": "Compute text width in 11px Verdana",
+  "description": "Compute text width in Verdana",
   "scripts": {
     "test": "../../node_modules/.bin/mocha test.js"
   },

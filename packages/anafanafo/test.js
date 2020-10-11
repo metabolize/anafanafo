@@ -3,6 +3,8 @@
 const { expect } = require('chai')
 const anafanafo = require('.')
 
+// These values were measured by inspecting `assets/test-page.html` in Chrome.
+
 describe('anafanafo', () => {
   it('Measures 11px Verdana', () => {
     const options = { font: '10px Verdana' }
@@ -33,7 +35,7 @@ describe('anafanafo', () => {
 
   it('Measures bold 11px Helvetica', () => {
     const options = { font: 'bold 11px Helvetica' }
-    expect(anafanafo('m', options)).to.equal(11.64)
-    expect(anafanafo('v1.2.511', options)).to.be.within(54.2 - 0.1, 54.2 + 0.1)
+    expect(anafanafo('m', options)).to.equal(9.97)
+    expect(anafanafo('v1.2.511', options)).to.be.within(42.42 - 0.1, 42.42 + 0.1)
   })
 })

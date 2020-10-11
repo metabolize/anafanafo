@@ -1,6 +1,6 @@
 {
   "name": "anafanafo",
-  "version": "1.0.0",
+  "version": "2.0.0-beta.0",
   "repository": "metabolize/anafanafo",
   "description": "Compute text width in Verdana",
   "scripts": {
@@ -10,5 +10,9 @@
   "license": "MIT",
   "dependencies": {
     "char-width-table-consumer": "^1.0.0"
-  }
+  },
+  "files": [
+    "index.js",
+    "data/*.json"
+  ]
 }

@@ -33,7 +33,7 @@ module.exports = class Measurer {
       const { stylesheets, font } = this
       const document = Measurer.renderDocument({ stylesheets, font })
       await this.page.goto(`data:text/html,${document}`, {
-        waitUntil: 'networkidle2',
+        waitUntil: 'networkidle0',
       })
     }
     await this.page.evaluate(() => {

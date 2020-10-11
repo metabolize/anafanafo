@@ -10,5 +10,9 @@
   "license": "MIT",
   "dependencies": {
     "char-width-table-consumer": "^1.0.0"
-  }
+  },
+  "files": [
+    "index.js",
+    "data/*.json"
+  ]
 }

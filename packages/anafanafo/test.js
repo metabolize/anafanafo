@@ -36,6 +36,9 @@ describe('anafanafo', () => {
   it('Measures bold 11px Helvetica', () => {
     const options = { font: 'bold 11px Helvetica' }
     expect(anafanafo('m', options)).to.equal(9.97)
-    expect(anafanafo('v1.2.511', options)).to.be.within(42.42 - 0.1, 42.42 + 0.1)
+    expect(anafanafo('v1.2.511', options)).to.be.within(
+      42.42 - 0.1,
+      42.42 + 0.1
+    )
   })
 })

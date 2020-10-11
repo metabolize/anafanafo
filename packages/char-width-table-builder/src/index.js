@@ -6,7 +6,10 @@ const { format, formatRange } = require('./format')
 const { compact } = require('./compact')
 const { eachCharOfRanges } = require('./range')
 
-async function computeWidthsOfRanges(ranges, { measurerOptions, verbose = true }) {
+async function computeWidthsOfRanges(
+  ranges,
+  { measurerOptions, verbose = true }
+) {
   const measurer = new Measurer(measurerOptions)
   await measurer.init()
 

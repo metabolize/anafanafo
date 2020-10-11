@@ -6,7 +6,10 @@ const puppeteer = require('puppeteer')
 // `<link href="https://fonts.googleapis.com/css2?family=Roboto&display=block" rel="stylesheet">`
 // This is useful for measuring web fonts and also for testing.
 module.exports = class Measurer {
-  constructor({ font = '110px Verdana', stylesheets } = {}) {
+  constructor({ font, stylesheets }) {
+    if (!font) {
+      throw Error('`font` is required')
+    }
     this.font = font
     this.stylesheets = stylesheets
     this.browser = undefined

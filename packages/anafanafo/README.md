@@ -13,8 +13,8 @@
 [prettier]: https://prettier.io/
 [lerna]: https://lernajs.io/
 
-Efficiently compute text width in 110 pt Verdana using [char-width-table-consumer][]
-and a lookup table.
+Efficiently compute text width in 11px Verdana using
+[char-width-table-consumer][] and a lookup table.
 
 Built with [Shields][] in mind.
 

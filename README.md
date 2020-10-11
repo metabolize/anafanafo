@@ -34,7 +34,7 @@ These have been built with [Shields][] in mind.
 
 ## Usage
 
-See [anatanafo][].
+See [anafanafo][].
 
 ## License
 

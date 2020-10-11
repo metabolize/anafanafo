@@ -1,14 +1,16 @@
 'use strict'
 
-const fs = require('fs')
 const { selectedRanges, shortListOfRanges } = require('./code-point-ranges')
 const Measurer = require('./measurer')
 const { format, formatRange } = require('./format')
 const { compact } = require('./compact')
 const { eachCharOfRanges } = require('./range')
 
-async function computeWidthsOfRanges(ranges, { verbose = true } = {}) {
-  const measurer = new Measurer()
+async function computeWidthsOfRanges(
+  ranges,
+  { measurerOptions, verbose = true }
+) {
+  const measurer = new Measurer(measurerOptions)
   await measurer.init()
 
   let collected = []
@@ -27,8 +29,8 @@ async function computeWidthsOfRanges(ranges, { verbose = true } = {}) {
   return collected
 }
 
-async function computeKerning(ranges, { verbose = true } = {}) {
-  const measurer = new Measurer()
+async function computeKerning(ranges, { measurerOptions, verbose = true }) {
+  const measurer = new Measurer(measurerOptions)
   await measurer.init()
 
   const eachChar = eachCharOfRanges(ranges)
@@ -56,15 +58,9 @@ async function computeKerning(ranges, { verbose = true } = {}) {
   return collected
 }
 
-async function main() {
-  const widths = await computeWidthsOfRanges(selectedRanges)
-  // const widths = await computeWidthsOfRanges(shortListOfRanges)
-
-  fs.writeFileSync('widths.json', JSON.stringify(widths))
-
-  const kerning = await computeKerning(shortListOfRanges)
-
-  fs.writeFileSync('kerning.json', JSON.stringify(kerning))
+module.exports = {
+  computeWidthsOfRanges,
+  computeKerning,
+  selectedRanges,
+  shortListOfRanges,
 }
-
-;(async () => main())()

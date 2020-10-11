@@ -7,7 +7,7 @@
     "lint": "eslint '**/*.js'",
     "prettier": "prettier --write \"**/*.@(yml|json|js|md)\"",
     "prettier:check": "prettier --check \"**/*.@(yml|json|js|md)\"",
-    "mocha": "mocha packages/**/test.js",
+    "mocha": "mocha packages/**/test.js packages/**/*.spec.js",
     "test": "run-p lint prettier:check mocha",
     "publish": "lerna publish"
   },

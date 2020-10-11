@@ -13,8 +13,8 @@
 [prettier]: https://prettier.io/
 [lerna]: https://lernajs.io/
 
-Efficiently compute text width in Verdana using
-[char-width-table-consumer][] and a lookup table.
+Efficiently compute text width in Verdana and Helvetica using
+[char-width-table-consumer][] and lookup tables.
 
 Built with [Shields][] in mind.
 
@@ -29,8 +29,8 @@ Built with [Shields][] in mind.
 ```js
 const anafanafo = require('anafanafo')
 
-// Supports 10px and 11px, normal and bold.
-const width = anafanafo('Shirley Shirley', { size: '10px', weight: 'normal' })
+// Supports '11px Verdana', '10px Verdana', 'bold 10px Verdana', and 'bold 11px Helvetica'.
+const width = anafanafo('Shirley Shirley', { font: '11px Verdana' })
 ```
 
 ## License

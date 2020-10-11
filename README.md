@@ -19,7 +19,7 @@ This repo contains three related npm packages:
   [Puppeteer][].
 - [char-width-table-consumer][], which efficiently computes text width using a
   character-width table.
-- [anafanafo][], which computes text width for Verdana.
+- [anafanafo][], which computes text width for Verdana and Helvetica.
 
 These have been built with [Shields][] in mind.
 

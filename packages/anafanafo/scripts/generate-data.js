@@ -14,10 +14,10 @@ const COMPUTE_KERNING = false
 const DATA_DIR = path.join(__dirname, '..', 'data')
 
 const fonts = {
-  '10px-normal': '10px Verdana',
-  '10px-bold': 'bold 10px Verdana',
-  '11px-normal': '11px Verdana',
-  '11px-bold': 'bold 11px Verdana',
+  'verdana-10px-normal': '10px Verdana',
+  'verdana-10px-bold': 'bold 10px Verdana',
+  'verdana-11px-normal': '11px Verdana',
+  'helvetica-11px-bold': 'bold 11px "Helvetica Neue"',
 }
 
 async function main() {

@@ -34,11 +34,7 @@ These have been built with [Shields][] in mind.
 
 ## Usage
 
-```js
-const anafanafo = require('anafanafo')
-
-const width = anafanafo('Shirley Shirley')
-```
+See [anatanafo][].
 
 ## License
 

@@ -1,5 +1,22 @@
 # Changelog
 
+## 2.0.0 – Oct. 15, 2020
+
+### BREAKING CHANGES
+
+- Measurer: `font` is now required.
+
+### New features
+
+- Export `computeWidthsOfRanges`, `computeKerning`, `selectedRanges`, and
+  `shortListOfRanges`,
+- Allow injecting stylesheets, useful for measuring web fonts.
+
+### Other changes
+
+- Add a test.
+- Update Puppeteer dependency.
+
 ## 1.0.0 – Apr 12, 2019
 
 - Update dependencies.

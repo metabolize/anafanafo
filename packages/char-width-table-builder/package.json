@@ -1,6 +1,6 @@
 {
   "name": "char-width-table-builder",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "repository": "metabolize/anafanafo",
   "description": "Serialize character widths using Puppeteer",
   "main": "src",
@@ -9,6 +9,10 @@
   "scripts": {
     "test": "mocha \"src/**/*.spec.js\""
   },
+  "files": [
+    "src/*.js",
+    "!src/*.spec.js"
+  ],
   "dependencies": {
     "puppeteer": "^5.3.1"
   }
